@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let hade of hade">
+      <ion-label>
+        <h2>{{ hade.Name }}</h2>
+        <p>{{ hade.Description }}</p>
+        <p>{{ hade.Location }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
